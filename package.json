@@ -1,0 +1,28 @@
+{
+  "name": "stopattop",
+  "version": "0.1.0",
+  "description": "Stop elements from scrolling past the top of the browser window.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nstublen/jquery-stopattop.git"
+  },
+  "keywords": [
+    "scroll",
+    "effect"
+  ],
+  "author": "Neal Stublen",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nstublen/jquery-stopattop/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/nstublen/jquery-stopattop/issues"
+  },
+  "homepage": "https://github.com/nstublen/jquery-stopattop"
+}
