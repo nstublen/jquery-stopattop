@@ -48,9 +48,23 @@ $(document).ready(function() {
   // Watch scrolling on the window to reposition the selected elements. 
   function trackScrolling() {
     $(window).scroll(function() {
-      $(".data-stop-at-top").each(function() {
+      var scrollTop = $(window).scrollTop();
+      
+      var tops = $(".data-stop-at-top").map(function () {
+        return $(this).data("firstTop");
+      });
+      
+      $(".data-stop-at-top").each(function(index) {
         var firstTop = $(this).data("firstTop");
-        var newTop = Math.max(0, firstTop - $(window).scrollTop());
+        var newTop = Math.max(0, firstTop - scrollTop);
+        var newBottom = newTop + $(this).height();
+        
+        var nextScrolledTop = tops[index + 1] - scrollTop;
+        if (nextScrolledTop < newBottom) {
+          newTop -= (newBottom - nextScrolledTop);
+          newBottom = nextScrolledTop;
+        }
+
         $(this).css("top", newTop);
       });
     });

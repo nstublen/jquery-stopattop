@@ -1,0 +1,32 @@
+h1, h2 {
+	text-align: center;
+}
+
+html {
+	background-size: 800px;
+}
+
+body {
+	margin: auto;
+	width: 800px;
+	font-family: Verdana;
+	font-size: 1.2em;
+}
+
+img {
+	width: 800px;
+	height: auto;
+}
+
+.shark-image {
+	z-index: 0;
+}
+
+.shark-text {
+	position: relative;
+	background-color: white;
+	width: 100%;
+	z-index: 1;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
