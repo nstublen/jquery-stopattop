@@ -1,8 +1,7 @@
 {
-  "name": "stopattop",
+  "name": "jquery-stopattop",
   "version": "0.1.0",
   "description": "Stop elements from scrolling past the top of the browser window.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
