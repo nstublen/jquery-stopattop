@@ -47,6 +47,13 @@ $(document).ready(function() {
 
   // Watch scrolling on the window to reposition the selected elements. 
   function trackScrolling() {
+    $(window).resize(function() {
+      $(".data-stop-at-top").each(function(index) {
+        var newWidth = $(this).next().width();
+        $(this).css("width", newWidth);
+      });
+    });
+
     $(window).scroll(function() {
       var scrollTop = $(window).scrollTop();
       
